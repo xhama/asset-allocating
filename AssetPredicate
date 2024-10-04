@@ -1,0 +1,21 @@
+/**
+ * Represents a basic predicate -- whether some <field on Asset> <== or contains> <value>.
+ */
+public class AssetPredicate {
+
+    // can also be an enum of Asset's field names
+    private String fieldName;
+
+    // can also be an enum
+    // ==, !=, contains/in
+    private String condition;
+
+    // value to compare the field value to
+    private String value;
+
+    // getters and settesr
+
+    public boolean evaluate(Asset asset) {
+        // returns true if asset's field value == or contans the given value on this object
+    }
+}
